@@ -14,3 +14,7 @@ This python script converts the html code from vscode with syntax highlighting t
 - Call `python3 convert.py path/to/html/file.html path/to/lstlisting/file.cpp` to convert the file
 - Put `\lstinputlisting[language=C++,caption=Caption, captionpos=b, escapeinside={<@}{@>}]{path/to/lstlisting/file.cpp}` into your latex code to include the file
 - The package `xcolor` must be included for color support
+
+## Example
+- Comparison between lstlisting syntax highlighting (left) and vscode syntax highlighting (right)
+![Comparison between lstlisting syntax highlighting (left) and vscode syntax highlighting (right)](images/comparison.png?raw=true)
