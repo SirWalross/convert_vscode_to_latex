@@ -3,7 +3,7 @@ import sys
 from bs4 import BeautifulSoup
 
 assert len(sys.argv) >= 3, "Please provide the html filename and a lstlisting filename"
-file = BeautifulSoup(open(sys.argv[2]), features="html.parser")
+file = BeautifulSoup(open(sys.argv[1]), features="html.parser")
 text_color = re.match("color: \#([0-9a-f]{6})", list(file.body.children)[2].get('style')).groups()[0]
 lines = [list(div.children) for div in list(file.body.children)[2].children]
 
